@@ -22,7 +22,6 @@ from flask_login import LoginManager
 login_manager = LoginManager(app) # 实例化扩展类
 login_manager.login_view = 'login'
 
-
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
 class User(db.Model, UserMixin):
